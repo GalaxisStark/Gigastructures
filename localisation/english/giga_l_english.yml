@@ -2079,7 +2079,7 @@
   giga_alderson_start_NAME:0 "$origin_alderson$"
   giga_alderson_start_DESC:0 "$origin_alderson_desc$"
 
-  giga_start_screen_alderson:0 "We do not know what happened to our ancestors. Enemies, plague, civil war? They exist now as myths and legends, their knowledge and power lost. They somehow built this vast disk encompassing the entirety of our star's gravity well, now we live in the vast, echoing expanse designed to house a million times more people than are left.\n\nAs all but the last slice has fallen into disrepair and uselessness our people have been filled with a new sense of purpose: we must unite and take our place against in the stars, or we will be lost forever to history.\n\nWe need to get people working the §Y$job_miner$§! and §Y$job_technician$§! jobs before we run out of resources to expand.\n\nWe may have to displace some people from their preferred job to make that happen.\n\n§RAI cannot use this origin. Any generated predefined custom AI empires with this origin will be generate with $origin_default$ instead.§!"
+  giga_start_screen_alderson:0 "We do not know what happened to our ancestors. Enemies, plague, civil war? They exist now as myths and legends, their knowledge and power lost. They somehow built this vast disk encompassing the entirety of our star's gravity well, now we live in the vast, echoing expanse designed to house a million times more people than are left.\n\nAs all but the last slice has fallen into disrepair and uselessness our people have been filled with a new sense of purpose: we must unite and take our place again in the stars, or we will be lost forever to history.\n\nWe need to get people working the §Y$job_miner$§! and §Y$job_technician$§! jobs before we run out of resources to expand.\n\nWe may have to displace some people from their preferred job to make that happen.\n\n§RAI cannot use this origin. Any generated predefined custom AI empires with this origin will be generate with $origin_default$ instead.§!"
 
   #############################################################################################################################################
   ### Civics ##################################################################################################################################
@@ -3583,32 +3583,44 @@
   d_zro_cloud:0 "Zro Nebulae"
   d_zro_cloud_desc:0 "Large drifting clouds of precious Zro particles, floating endlessly."
 
-    d_alderson_generator:0 "Arcane Generator"
-    d_alderson_generator_desc:0 "This ancient machine seems to respond to our needs by producing the resources needed to upkeep some of our districts."
+  d_alderson_generator:0 "Arcane Generator"
+  d_alderson_generator_desc:0 "This ancient machine seems to respond to our needs by producing the resources needed to upkeep some of our districts."
 
-  d_alderson_ruined_district:0 "Land Clearance"
-  d_alderson_ruined_district_desc:0 "Clearing the alderson is a task of mammoth proportions, but we have to start somewhere."
+  d_alderson_ruined_district:0 "Destroyed Districts"
+  d_alderson_ruined_district_desc:0 "The decrepit remains of several ancient districts. It impedes on our ability to house our people."
   d_alderson_ruined_district_cleared:0 "Max Districts: §G+1§!"
+
+  d_alderson_repaired_district:0 "Repaired Districts"
+  d_alderson_repaired_district_desc:0 "By clearing the ancient remains, we can fit far more people into housing. There is also more space to construct additional districts."
 
   d_alderson_lost01:0 "$d_birch_lost01$"
   d_alderson_lost01_desc:0 "$d_birch_lost01_desc$"
   d_alderson_lost01_cleared:0 "Gain §B1 £pops£Pop§! on §Y[root.GetName]§!\nClearing all of the §Y$d_alderson_lost01$§! blockers will reduce the cost of §Y$d_alderson_ruined_district$§! by §G50%§!"
 
   d_alderson_ruined_housing:0 "Sprawling Slums"
-  d_alderson_ruined_housing_desc:0 "Clearing the alderson is a task of mammoth proportions, but we have to start somewhere."
+  d_alderson_ruined_housing_desc:0 "Vast slums of scum and villainy. A hotbed of crime, our enforcers are stretched thin trying to keep it contained."
   d_alderson_ruined_housing_cleared:0 "Housing: §G+5%§!\nClearing all of the §Y$d_alderson_ruined_housing$§! blockers will reduce the cost of §Y$d_alderson_ruined_district$§! by §G50%§!"
 
+  d_alderson_repaired_housing:0 "Cleared Slums"
+  d_alderson_repaired_housing_desc:0 "Clearing the slums has uncovered vast swathes of unregistered people. Our population growth should improve now that they are accounted for."
+
   d_alderson_ruined_police:0 "Decrepit Station"
-  d_alderson_ruined_police_desc:0 "Clearing the alderson is a task of mammoth proportions, but we have to start somewhere."
+  d_alderson_ruined_police_desc:0 "This station was once the hub for our law enforcement. It has since fallen into disrepair, and the lack of a central location impedes our law enforcement from doing their jobs effectively."
   d_alderson_ruined_police_cleared:0 "Enforcer Jobs: §G+1§!\nClearing all of the §Y$d_alderson_ruined_police$§! blockers will reduce the cost of §Y$d_alderson_ruined_district$§! by §G50%§!"
+
+  d_alderson_repaired_police:0 "Restored Station"
+  d_alderson_repaired_police_desc:0 "We have restored the great police station, and our law enforcement is now much more effective. We also have more space to hire more officers if required."
 
   d_alderson_ruined_patrol_drone:0 "Decrepit Tower"
   d_alderson_ruined_patrol_drone_desc:0 "Clearing the alderson is a task of mammoth proportions, but we have to start somewhere."
   d_alderson_ruined_patrol_drone_cleared:0 "Hunter-Seeker Jobs: §G+1§!\nClearing all of the §Y$d_alderson_ruined_patrol_drone$§! blockers will reduce the cost of §Y$d_alderson_ruined_district$§! by §G50%§!"
 
-  d_alderson_ruined_miner:0 "Restore Matter Synthesizer"
-  d_alderson_ruined_miner_desc:0 "Clearing the alderson is a task of mammoth proportions, but we have to start somewhere."
+  d_alderson_ruined_miner:0 "Malfunctioning Matter Synthesizer"
+  d_alderson_ruined_miner_desc:0 "This machine once allowed our ancestors to produce almost anything by inputting raw energy. Now, we have to make constant repairs to ensure it doesn't detonate."
   d_alderson_ruined_miner_cleared:0 "Miner Jobs: §G+5%§!\nClearing all of the §Y$d_alderson_ruined_miner$§! blockers will reduce the cost of §Y$d_alderson_ruined_district$§! by §G50%§!"
+
+  d_alderson_repaired_miner:0 "Repurposed Matter Synthesizer"
+  d_alderson_repaired_miner_desc:0 "While it may not be as powerful as it was originally, we can still use the synthesizer to improve mineral production."
 
   d_alderson_ruined_mining_drone:0 "Restore Matter Synthesizer"
   d_alderson_ruined_mining_drone_desc:0 "Clearing the alderson is a task of mammoth proportions, but we have to start somewhere."
@@ -3619,8 +3631,11 @@
   d_alderson_ruined_mining_drone_cleared:0 "Mining Drone Jobs: §G+5%§!\nClearing all of the §Y$d_alderson_ruined_mining_drone_hive$§! blockers will reduce the cost of §Y$d_alderson_ruined_district$§! by §G50%§!"
 
   d_alderson_ruined_farmer:0 "Contaminated Soil"
-  d_alderson_ruined_farmer_desc:0 "Clearing the alderson is a task of mammoth proportions, but we have to start somewhere."
+  d_alderson_ruined_farmer_desc:0 "Huge swathes of soil are filled with toxins, pollutants and radioactive substances, rendering them unusable until cleaned."
   d_alderson_ruined_farmer_cleared:0 "Farmer Jobs: §G+5%§!\nClearing all of the §Y$d_alderson_ruined_farmer$§! blockers will reduce the cost of §Y$d_alderson_ruined_district$§! by §G50%§!"
+
+  d_alderson_repaired_farmer:0 "Vast Fields"
+  d_alderson_repaired_farmer_desc:0 "After a massive cleanup effort, this soil is finally usable. It massively bolsters food production simply by providing a large area to grow food."
 
   d_alderson_ruined_agri_drone:0 "Contaminated Soil"
   d_alderson_ruined_agri_drone_desc:0 "Clearing the alderson is a task of mammoth proportions, but we have to start somewhere."
@@ -3631,8 +3646,11 @@
   d_alderson_ruined_agri_drone_cleared:0 "Agri Drone Jobs: §G+5%§!\nClearing all of the §Y$d_alderson_ruined_agri_drone_hive$§! blockers will reduce the cost of §Y$d_alderson_ruined_district$§! by §G50%§!"
 
   d_alderson_ruined_technician_hive:0 "Exposed Core"
-  d_alderson_ruined_technician_hive_desc:0 "Clearing the alderson is a task of mammoth proportions, but we have to start somewhere."
+  d_alderson_ruined_technician_hive_desc:0 "This power core was damaged at an unknown point in the past. It emits dangerous radiation, harming our people and impacting our reproductive ability. However, it does provide some unique opportunities for scientific study."
   d_alderson_ruined_technician_hive_cleared:0 "Tech-Drone Jobs: §G+5%§!\nClearing all of the §Y$d_alderson_ruined_technician_hive$§! blockers will reduce the cost of §Y$d_alderson_ruined_district$§! by §G50%§!"
+
+  d_alderson_repaired_technician_hive:0 "Repaired Core"
+  d_alderson_repaired_technician_hive_desc:0 "After fixing the core and cleaning up the radiation, we can use the energy produced to power our infrastructure."
 
   d_alderson_ruined_technician_machine:0 "Exposed Core"
   d_alderson_ruined_technician_machine_desc:0 "Clearing the alderson is a task of mammoth proportions, but we have to start somewhere."
@@ -3647,8 +3665,11 @@
   d_alderson_ruined_maintenance_drone_cleared:0 "Maintenance Drone Jobs: §G+5%§!\nClearing all of the §Y$d_alderson_ruined_maintenance_drone_hive$§! blockers will reduce the cost of §Y$d_alderson_ruined_district$§! by §G50%§!"
 
   d_alderson_ruined_clerk:0 "Destroyed Depot"
-  d_alderson_ruined_clerk_desc:0 "Clearing the alderson is a task of mammoth proportions, but we have to start somewhere."
+  d_alderson_ruined_clerk_desc:0 "Once a thriving hub of trade, this depot has decayed from lack of use. It now impedes our own trade efforts."
   d_alderson_ruined_clerk_cleared:0 "Clerk Jobs: §G+5%§!\nClearing all of the §Y$d_alderson_ruined_clerk$§! blockers will reduce the cost of §Y$d_alderson_ruined_district$§! by §G50%§!"
+
+  d_alderson_repaired_clerk:0 "Restored Depot"
+  d_alderson_repaired_clerk_desc:0 "After extensive repair efforts, this depot can perform its original purpose and be our main trading nexus. The massive space also improves the production of amenities."
 
   d_alderson_ruined_merchant:0 "Ground Zero"
   d_alderson_ruined_merchant_desc:0 "Clearing the alderson is a task of mammoth proportions, but we have to start somewhere."
@@ -3663,8 +3684,11 @@
   d_alderson_ruined_crafters_cleared:0 "Artificer Jobs: §G+5%§!\nClearing all of the §Y$d_alderson_ruined_artisan$§! blockers will reduce the cost of §Y$d_alderson_ruined_district$§! by §G50%§!"
 
   d_alderson_ruined_foundry:0 "Melted Foundry"
-  d_alderson_ruined_foundry_desc:0 "Clearing the alderson is a task of mammoth proportions, but we have to start somewhere."
+  d_alderson_ruined_foundry_desc:0 "A foundry completely melted by...something. We aren't sure what exactly caused it, but the negative impact on our alloy production is very noticeable."
   d_alderson_ruined_foundry_cleared:0 "Metallurgist Jobs: §G+5%§!\nClearing all of the §Y$d_alderson_ruined_foundry$§! blockers will reduce the cost of §Y$d_alderson_ruined_district$§! by §G50%§!"
+
+  d_alderson_repaired_foundry:0 "Repaired Foundry"
+  d_alderson_repaired_foundry_desc:0 "Restoring the foundry has drastically improved our alloy production."
 
   d_alderson_ruined_foundry_hive:0 "Melted Foundry"
   d_alderson_ruined_foundry_hive_desc:0 "Clearing the alderson is a task of mammoth proportions, but we have to start somewhere."
