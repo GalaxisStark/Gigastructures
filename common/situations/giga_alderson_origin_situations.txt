@@ -1,0 +1,135 @@
+# Main situation
+
+giga_situation_alderson_origin = {
+	picture = GFX_evt_archaeological_dig
+
+	complete_icon = GFX_situation_outcome_unknown
+	complete_icon_frame = GFX_situation_outcome_frame_blue
+
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 100
+		}
+
+		stage_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+			end = 200
+		}
+
+		stage_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+			end = 300
+		}
+
+		stage_4 = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_blue
+			end = 400
+		}
+
+		stage_5 = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_blue
+			end = 500
+		}
+
+		stage_6 = {
+			icon = GFX_situation_stage_6
+			icon_background = GFX_situation_stage_frame_blue
+			end = 600
+		}
+
+		stage_7 = {
+			icon = GFX_situation_stage_7
+			icon_background = GFX_situation_stage_frame_blue
+			end = 700
+		}
+
+		stage_8 = {
+			icon = GFX_situation_stage_8
+			icon_background = GFX_situation_stage_frame_blue
+			end = 800
+		}
+
+		stage_9 = {
+			icon = GFX_situation_stage_9
+			icon_background = GFX_situation_stage_frame_blue
+			end = 900
+		}
+
+		stage_10 = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_blue
+			end = 1000
+		}
+	}
+
+	approach = {
+		name = giga_situation_alderson_origin_approach_regular
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_yellow
+		default = yes
+
+		# on_select = {
+			
+		# }
+
+		modifier = {
+			country_influence_produces_mult = -0.25
+			country_energy_produces_mult = -0.15
+			country_alloys_produces_mult = -0.05
+		}
+	}
+
+	approach = {
+		name = giga_situation_alderson_origin_approach_extra
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_green
+
+		# on_select = {
+			
+		# }
+
+		modifier = {
+			country_influence_produces_mult = -0.50
+			country_energy_produces_mult = -0.25
+			country_alloys_produces_mult = -0.10
+		}
+	}
+
+	approach = {
+		name = giga_situation_alderson_origin_approach_frugal
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_red
+
+		# on_select = {
+			
+		# }
+
+		modifier = {
+			country_influence_produces_mult = -0.10
+			country_energy_produces_mult = -0.05
+			country_alloys_produces_mult = -0.025
+		}
+	}
+
+	monthly_progress = {
+		base = 1
+
+		modifier = {
+			add = 0.25
+			desc = giga_situation_alderson_origin_approach_extra_progress
+			current_situation_approach = giga_situation_alderson_origin_approach_extra
+		}
+
+		modifier = {
+			add = -0.25
+			desc = giga_situation_alderson_origin_approach_frugal_progress
+			current_situation_approach = giga_situation_alderson_origin_approach_frugal
+		}
+	}
+}
