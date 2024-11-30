@@ -24,22 +24,10 @@ country_event = {
 				last_created_ambient_object = { set_ambient_object_flag = alderson_frame }
 
 				spawn_megastructure = {
-					name = "Ruined Hypersegment H"
-					type = "alderson_disk_ruined_left"
-					orbit_angle = 0
-					orbit_distance = 178.75
-					owner = from
-					init_effect = {
-						set_megastructure_flag = alderson_ruined_left
-						giga_field_debris = yes
-					}
-				}
-
-				spawn_megastructure = {
 					name = "Ruined Hypersegment B"
 					type = "alderson_disk_ruined_right"
 					orbit_angle = 90
-					orbit_distance = 178.75
+					orbit_distance = 180
 					owner = from
 					init_effect = {
 						set_megastructure_flag = alderson_ruined_right
@@ -61,65 +49,59 @@ country_event = {
 
 				spawn_megastructure = {
 					name = "Ruined Hypersegment D"
-					type = "alderson_disk_ruined_left"
+					type = "alderson_disk_ruined_center"
 					orbit_angle = 180
-					orbit_distance = 178.75
+					orbit_distance = 180
 					owner = from
 					init_effect = {
-						set_megastructure_flag = alderson_ruined_left
+						set_megastructure_flag = alderson_ruined_center
+						giga_field_debris = yes
+					}
+				}
+
+				spawn_megastructure = {
+					name = "Ruined Hypersegment E"
+					type = "alderson_disk_ruined_center"
+					orbit_angle = 225
+					orbit_distance = 180
+					init_effect = {
+						set_megastructure_flag = alderson_ruined_center
+						giga_field_debris = yes
+					}
+				}
+
+				spawn_megastructure = {
+					name = "Ruined Hypersegment F"
+					type = "alderson_disk_ruined_center"
+					orbit_angle = 270
+					orbit_distance = 180
+					init_effect = {
+						set_megastructure_flag = alderson_ruined_center
 						giga_field_debris = yes
 					}
 				}
 
 				spawn_megastructure = {
 					name = "Ruined Hypersegment G"
-					type = "alderson_disk_ruined_right"
+					type = "alderson_disk_ruined_center"
 					orbit_angle = 315
 					orbit_distance = 180
 					owner = from
 					init_effect = {
-						set_megastructure_flag = alderson_ruined_right
+						set_megastructure_flag = alderson_ruined_center
 						giga_field_debris = yes
 					}
 				}
 
-				spawn_planet = {
-					class = "pc_alderson_slice_gaia_shattered"
-					location = solar_system
-					orbit_angle_offset = 135
-					orbit_distance_offset = 180
-					size = 90
+				spawn_megastructure = {
+					name = "Ruined Hypersegment H"
+					type = "alderson_disk_ruined_left"
+					orbit_angle = 0
+					orbit_distance = 180
+					owner = from
 					init_effect = {
-						set_name = "Hypersegment E"
-						prevent_anomaly = yes
-						set_planet_flag = forbid_guillis_planet_modifiers
-						set_planet_flag = gpm_has_planet_rings
-						set_planet_flag = excognitor_planet
-						set_planet_flag = giga_alderson_gaia
-						generate_alderson_01_primitives_on_planet = yes
-						last_created_country = {
-							establish_communications_no_message = root
-						}
-					}
-				}
-
-				spawn_planet = {
-					class = "pc_alderson_slice_gaia_shattered"
-					location = solar_system
-					orbit_angle_offset = 180
-					orbit_distance_offset = 178.75
-					size = 90
-					init_effect = {
-						set_name = "Hypersegment F"
-						prevent_anomaly = yes
-						set_planet_flag = forbid_guillis_planet_modifiers
-						set_planet_flag = gpm_has_planet_rings
-						set_planet_flag = dominion_planet
-						set_planet_flag = giga_alderson_gaia
-						generate_alderson_02_primitives_on_planet = yes
-						last_created_country = {
-							establish_communications_no_message = root
-						}
+						set_megastructure_flag = alderson_ruined_left
+						giga_field_debris = yes
 					}
 				}
 			}
@@ -137,15 +119,6 @@ country_event = {
 			clear_planet_modifiers = yes
 			clear_deposits = yes
 			clear_blockers = yes
-		
-			add_deposit = d_alderson_ruined_district
-			add_deposit = d_alderson_ruined_housing
-			add_deposit = d_alderson_ruined_miner
-			add_deposit = d_alderson_ruined_farmer
-			add_deposit = d_alderson_ruined_technician_hive
-			add_deposit = d_alderson_ruined_clerk
-			add_deposit = d_alderson_ruined_foundry
-			#add_deposit = d_alderson_ruined_police
 	
 			if = {
 				limit = { owner = { is_lithoid_empire = yes NOT = { has_valid_civic = civic_hive_devouring_swarm } } }
@@ -156,9 +129,6 @@ country_event = {
 				limit = { owner = { is_lithoid_empire = yes has_valid_civic = civic_hive_devouring_swarm } }
 				while = { count = 2 add_deposit = d_hibernating_lithoids }
 			}
-
-			#add_deposit = d_alderson_lost01
-			# no
 
 			remove_all_districts = yes
 			remove_all_buildings = yes
@@ -501,5 +471,9 @@ country_event = {
 			check_planet_employment = yes
 		}
 		country_event = { id = game_start.62 } 
+		
+		start_situation = {
+			type = giga_situation_alderson_origin
+		}
 	}
 }

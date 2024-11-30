@@ -62,7 +62,7 @@ giga_situation_alderson_origin = {
 		}
 
 		stage_10 = {
-			icon = GFX_situation_stage_5
+			icon = GFX_situation_stage_10
 			icon_background = GFX_situation_stage_frame_blue
 			end = 1000
 		}
