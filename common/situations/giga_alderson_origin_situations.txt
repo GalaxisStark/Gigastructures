@@ -17,30 +17,45 @@ giga_situation_alderson_origin = {
 			icon = GFX_situation_stage_2
 			icon_background = GFX_situation_stage_frame_blue
 			end = 200
+			on_first_enter = {
+				situation_event = { id = giga_alderson.1000 }
+			}
 		}
 
 		stage_3 = {
 			icon = GFX_situation_stage_3
 			icon_background = GFX_situation_stage_frame_blue
 			end = 300
+			on_first_enter = {
+				situation_event = { id = giga_alderson.2000 }
+			}
 		}
 
 		stage_4 = {
 			icon = GFX_situation_stage_4
 			icon_background = GFX_situation_stage_frame_blue
 			end = 400
+			on_first_enter = {
+				situation_event = { id = giga_alderson.3000 }
+			}
 		}
 
 		stage_5 = {
 			icon = GFX_situation_stage_5
 			icon_background = GFX_situation_stage_frame_blue
 			end = 500
+			on_first_enter = {
+				situation_event = { id = giga_alderson.4000 }
+			}
 		}
 
 		stage_6 = {
 			icon = GFX_situation_stage_6
 			icon_background = GFX_situation_stage_frame_blue
 			end = 600
+			on_first_enter = {
+				situation_event = { id = giga_alderson.5000 }
+			}
 		}
 
 		stage_7 = {
@@ -130,6 +145,12 @@ giga_situation_alderson_origin = {
 			add = -0.25
 			desc = giga_situation_alderson_origin_approach_frugal_progress
 			current_situation_approach = giga_situation_alderson_origin_approach_frugal
+		}
+
+		modifier = {
+			multiply = 0
+			desc = giga_situation_alderson_origin_expedition_progress
+			has_situation_flag = expedition_underway
 		}
 	}
 }

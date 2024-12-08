@@ -1135,3 +1135,47 @@ district_giga_alderson_sanctuary = {
 	}
 	
 }
+
+# origin science
+
+district_giga_origin_alderson_lab = {
+	base_buildtime = 360
+	icon = district_giga_archaeology
+	is_capped_by_modifier = yes
+
+	show_on_uncolonized = {
+		uses_district_set = shattered_ring_world
+		is_planet_class = pc_alderson_slice_gaia_shattered
+	}
+
+	potential = { 
+		uses_district_set = shattered_ring_world
+		is_planet_class = pc_alderson_slice_gaia_shattered
+	}
+
+	prerequisites = {
+		tech_basic_science_lab_1
+	}
+
+	show_tech_unlock_if = {
+		has_origin = origin_alderson
+	}
+
+	resources = { 
+		category = planet_districts
+
+		cost = {
+			minerals = 400
+		}
+
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	inline_script = {
+		script = planet/research/giga_researcher_job_swap
+		jobs = 2
+		district = @yes
+	}
+}

@@ -1,0 +1,11 @@
+d_giga_alderson_origin_home_labs = {
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+	drop_weight = {	weight = 0 }
+	potential = { always = no }
+	icon = d_ruins_medium
+
+	planet_modifier = {
+		district_giga_origin_alderson_lab_max = 2
+	}
+}
