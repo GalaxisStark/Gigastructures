@@ -62,24 +62,36 @@ giga_situation_alderson_origin = {
 			icon = GFX_situation_stage_7
 			icon_background = GFX_situation_stage_frame_blue
 			end = 700
+			on_first_enter = {
+				situation_event = { id = giga_alderson.6000 }
+			}
 		}
 
 		stage_8 = {
 			icon = GFX_situation_stage_8
 			icon_background = GFX_situation_stage_frame_blue
 			end = 800
+			on_first_enter = {
+				situation_event = { id = giga_alderson.7000 }
+			}
 		}
 
 		stage_9 = {
 			icon = GFX_situation_stage_9
 			icon_background = GFX_situation_stage_frame_blue
 			end = 900
+			on_first_enter = {
+				situation_event = { id = giga_alderson.8000 }
+			}
 		}
 
 		stage_10 = {
 			icon = GFX_situation_stage_10
 			icon_background = GFX_situation_stage_frame_blue
 			end = 1000
+			on_first_enter = {
+				situation_event = { id = giga_alderson.9000 }
+			}
 		}
 	}
 
