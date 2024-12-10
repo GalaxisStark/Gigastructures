@@ -164,5 +164,17 @@ giga_situation_alderson_origin = {
 			desc = giga_situation_alderson_origin_expedition_progress
 			has_situation_flag = expedition_underway
 		}
+
+		modifier = {
+			multiply = 10
+			desc = giga_situation_alderson_origin_edge_reached
+			has_situation_flag = edge_reached
+		}
+	}
+
+	on_progress_complete = {
+		situation_event = {
+			id = giga_preset.1
+		}
 	}
 }

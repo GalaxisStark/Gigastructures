@@ -1356,5 +1356,688 @@ country_event = {
 	option = {
 		name = giga_alderson.6003.a
 		event_target:situation.target = { add_deposit = d_giga_alderson_expedition_6_energy }
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.6004
+				days = 5
+			}
+		}
 	}
 }
+
+# conclusion 
+
+country_event = {
+	id = giga_alderson.6004
+	is_triggered_only = yes
+	picture = GFX_evt_binary_stars
+	title = giga_alderson.6004
+	desc = giga_alderson.6004.desc
+	location = event_target:situation.target
+
+	option = {
+		name = giga_alderson.6004.a
+		hidden_effect = {
+			event_target:situation.target = { set_planet_flag = alderson_expedition_6_complete }
+			event_target:situation = { remove_situation_flag = expedition_underway }
+			event_target:giga_alderson_expedition_leader = {
+				kill_leader = {
+					show_notification = no
+				}
+			}
+		}
+	}
+}
+
+### EXPEDITION 7 ###
+
+situation_event = {
+	id = giga_alderson.7000
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		save_event_target_as = situation
+		set_situation_flag = expedition_underway
+
+		owner = {
+			create_leader = {
+				class = official
+				species = owner_main_species
+				name = random
+			}
+			last_created_leader = {
+				exile_leader_as = giga_alderson_expedition_leader
+				save_event_target_as = giga_alderson_expedition_leader
+				set_immortal = yes
+			}
+		}
+	}
+
+	after = {
+		owner = {
+			country_event = {
+				id = giga_alderson.7001
+			}
+		}
+	}
+}
+
+# begin seventh expedition
+
+country_event = {
+	id = giga_alderson.7001
+	is_triggered_only = yes
+	picture = GFX_evt_dead_city
+	title = giga_alderson.7001
+	desc = giga_alderson.7001.desc
+	location = event_target:situation.target
+	
+	option = {
+		name = giga_alderson.7001.a
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.7002
+				days = 30
+			}
+		}
+	}
+}
+
+# discover a ruined matter synthesizer, issue special project to repair it
+
+country_event = {
+	id = giga_alderson.7002
+	is_triggered_only = yes
+	picture = GFX_evt_crystal_mining
+	title = giga_alderson.7002
+	desc = giga_alderson.7002.desc
+	location = event_target:situation.target
+	
+	option = {
+		name = giga_alderson.7002.a
+		custom_tooltip = giga_alderson.7002.project
+		enable_special_project = {
+			name = giga_alderson_origin_expedition_7
+			owner = root
+			location = event_target:situation.target
+		}
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.7003
+				days = 15
+			}
+		}
+	}
+}
+
+# project complete, synthesizer restored
+
+country_event = {
+	id = giga_alderson.7003
+	is_triggered_only = yes
+	picture = GFX_evt_tradestation_interior
+	title = giga_alderson.7003
+	desc = giga_alderson.7003.desc
+	location = event_target:situation.target
+
+	option = {
+		name = giga_alderson.7003.a
+		custom_tooltip = giga_alderson.7003.minerals
+		event_target:situation.target = { add_deposit = d_giga_alderson_expedition_7_minerals }
+		hidden_effect = { 
+			country_event = {
+				id = giga_alderson.7004
+				days = 5
+			}
+		}
+	}
+}
+
+# conclusion
+
+country_event = {
+	id = giga_alderson.7004
+	is_triggered_only = yes
+	picture = GFX_evt_binary_stars
+	title = giga_alderson.7004
+	desc = giga_alderson.7004.desc
+	location = event_target:situation.target
+
+	option = {
+		name = giga_alderson.7004.a
+		hidden_effect = {
+			event_target:situation.target = { set_planet_flag = alderson_expedition_7_complete }
+			event_target:situation = { remove_situation_flag = expedition_underway }
+			event_target:giga_alderson_expedition_leader = {
+				kill_leader = {
+					show_notification = no
+				}
+			}
+		}
+	}
+}
+
+### EXPEDITION 8 ###
+
+situation_event = {
+	id = giga_alderson.8000
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		save_event_target_as = situation
+		set_situation_flag = expedition_underway
+
+		owner = {
+			create_leader = {
+				class = official
+				species = owner_main_species
+				name = random
+			}
+			last_created_leader = {
+				exile_leader_as = giga_alderson_expedition_leader
+				save_event_target_as = giga_alderson_expedition_leader
+				set_immortal = yes
+			}
+		}
+	}
+
+	after = {
+		owner = {
+			country_event = {
+				id = giga_alderson.8001
+			}
+		}
+	}
+}
+
+# begin eight expedition
+
+country_event = {
+	id = giga_alderson.8001
+	is_triggered_only = yes
+	picture = GFX_evt_dead_city
+	title = giga_alderson.8001
+	desc = giga_alderson.8001.desc
+	location = event_target:situation.target
+	
+	option = {
+		name = giga_alderson.8001.a
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.8002
+				days = 30
+			}
+		}
+	}
+}
+
+# polluted industrial wasteland. some salvageable materials though
+
+country_event = {
+	id = giga_alderson.8002
+	is_triggered_only = yes
+	picture = GFX_evt_toxic
+	title = giga_alderson.8002
+	desc = giga_alderson.8002.desc
+	location = event_target:situation.target
+
+	option = {
+		name = giga_alderson.8002.a
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.8003
+				days = 15
+			}
+		}
+		add_monthly_resource_mult = {
+			resource = exotic_gases
+			value = 5
+			min = 500
+			max = 1000
+		}
+		add_monthly_resource_mult = {
+			resource = volatile_motes
+			value = 5
+			min = 500
+			max = 1000
+		}
+		add_monthly_resource_mult = {
+			resource = rare_crystals
+			value = 5
+			min = 500
+			max = 1000
+		}
+	}
+}
+
+# build a plant that uses the pollutants to make rare resources
+
+country_event = {
+	id = giga_alderson.8003
+	is_triggered_only = yes
+	picture = GFX_evt_mining_operations
+	title = giga_alderson.8003
+	desc = giga_alderson.8003.desc
+	location = event_target:situation.target
+
+	option = {
+		name = giga_alderson.8003.a
+		custom_tooltip = giga_alderson.8003.rares
+		event_target:situation.target = { add_deposit = d_giga_alderson_expedition_8_rares }
+		hidden_effect = { 
+			country_event = {
+				id = giga_alderson.8004
+				days = 5
+			}
+		}
+	}
+}
+
+# conclusion
+
+country_event = {
+	id = giga_alderson.8004
+	is_triggered_only = yes
+	picture = GFX_evt_infested
+	title = giga_alderson.8004
+	desc = giga_alderson.8004.desc
+	location = event_target:situation.target
+
+	option = {
+		name = giga_alderson.8004.a
+		hidden_effect = {
+			event_target:situation.target = { set_planet_flag = alderson_expedition_8_complete }
+			event_target:situation = { remove_situation_flag = expedition_underway }
+			event_target:giga_alderson_expedition_leader = {
+				kill_leader = {
+					show_notification = no
+				}
+			}
+		}
+	}
+}
+
+### FINAL EXPEDITION ###
+
+situation_event = {
+	id = giga_alderson.9000
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		save_event_target_as = situation
+		set_situation_flag = expedition_underway
+		target = {
+			save_event_target_as = target
+		}
+
+		owner = {
+			save_event_target_as = owner
+			create_leader = {
+				class = official
+				species = owner_main_species
+				name = random
+			}
+			last_created_leader = {
+				exile_leader_as = giga_alderson_expedition_leader
+				save_event_target_as = giga_alderson_expedition_leader
+				set_immortal = yes
+			}
+		}
+
+		# create architects species, country and leader
+
+		create_species = {
+			class = random_non_machine
+			homeworld = root.target
+			effect = {
+				modify_species = {
+					species = this
+					ideal_planet_class = pc_alderson_slice_gaia_shattered
+					base = none
+					effect = {
+						save_event_target_as = giga_alderson_architect_species
+						save_global_event_target_as = giga_alderson_architect_species_@event_target:target
+						save_global_event_target_as = giga_alderson_architect_species_@event_target:owner
+					}
+				}
+			}
+		}
+
+
+		# their empire, and leader
+		create_country = {
+			type = giga_alderson_architect
+			species = event_target:giga_alderson_architect_species
+			ethos = random
+			civics = random
+			auto_delete = no
+			government_restrictions = {
+				ethics = {
+					nor = {
+						value = ethic_gestalt_consciousness # need normal empires
+						value = ethic_fanatic_xenophobe # no xenophobes so it's not instant rejection
+						value = ethic_xenophobe
+						value = ethic_fanatic_spiritualist # no fanatic spiritualists to reject machines
+					}
+				}
+			}
+		}
+		last_created_country = {
+			save_event_target_as = giga_alderson_architect_country
+			save_global_event_target_as = giga_alderson_architect_country_@event_target:target
+			save_global_event_target_as = giga_alderson_architect_country_@event_target:owner
+			establish_communications_no_message = root.owner
+			create_leader = {
+				class = official
+				species = event_target:giga_alderson_architect_species
+				name = random
+			}
+			last_created_leader = {
+				save_event_target_as = giga_alderson_architect_ruler
+				set_immortal = yes
+			}
+			set_leader = last_created_leader
+		}
+	}
+
+	after = {
+		owner = {
+			country_event = {
+				id = giga_alderson.9001
+			}
+		}
+	}
+}
+
+# begin final expedition. edge or bust! (wait...)
+
+country_event = {
+	id = giga_alderson.9001
+	is_triggered_only = yes
+	picture = GFX_evt_grand_speech
+	title = giga_alderson.9001
+	desc = giga_alderson.9001.desc
+	location = event_target:situation.target
+
+	option = {
+		name = giga_alderson.9001.a
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.9002
+				days = 30
+			}
+		}
+	}
+}
+
+# arrival at the edge
+
+country_event = {
+	id = giga_alderson.9002
+	is_triggered_only = yes
+	picture = GFX_evt_ringworld
+	title = giga_alderson.9002
+	desc = giga_alderson.9002.desc
+	location = event_target:situation.target
+
+	option = {
+		name = giga_alderson.9002.a
+		add_monthly_resource_mult = {
+			resource = unity
+			value = 69
+			min = 20000
+			max = 300000
+		}
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.9003
+				days = 2
+			}
+		}
+	}
+}
+
+# wait, whats that building? and why is it so clean?
+
+country_event = {
+	id = giga_alderson.9003
+	is_triggered_only = yes
+	picture = GFX_evt_hidden_door
+	title = giga_alderson.9003
+	desc = giga_alderson.9003.desc
+	location = event_target:situation.target
+
+	option = {
+		name = giga_alderson.9003.a
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.9004
+				days = 1
+			}
+		}
+	}
+}
+
+# the architects
+
+country_event = {
+	id = giga_alderson.9004
+	is_triggered_only = yes
+	picture = GFX_evt_worrying_signal
+	title = giga_alderson.9004
+	desc = giga_alderson.9004.desc
+	location = event_target:situation.target
+
+	option = {
+		name = giga_alderson.9004.a
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.9005
+			}
+		}
+	}
+}
+
+# open communications with the architects
+
+country_event = {
+	id = giga_alderson.9005
+	is_triggered_only = yes
+	diplomatic = yes
+	diplomatic_title = giga_alderson.9005.title
+	location = event_target:situation.target
+	picture_event_data = {
+		portrait = event_target:giga_alderson_architect_ruler
+		planet_background = pc_gaia
+		graphical_culture = industrial_01
+		city_level = 4
+		room = event_target:giga_alderson_architect_country
+	}
+	option = {
+		trigger = {
+			has_civic = civic_fanatic_purifiers
+		}
+		name = giga_alderson.9005.purifier
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.9100
+			}
+		}
+	}
+	option = {
+		trigger = {
+			has_civic = civic_hive_devouring_swarm
+		}
+		name = giga_alderson.9005.devouring
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.9100
+			}
+		}
+	}
+	option = {
+		trigger = {
+			has_civic = civic_machine_terminator
+		}
+		name = giga_alderson.9005.terminator
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.9100
+			}
+		}
+	}
+	option = {
+		trigger = {
+			is_homicidal = no
+		}
+		name = giga_alderson.9005.normal
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.9006
+			}
+		}
+	}
+}
+
+# who are you?
+
+country_event = {
+	id = giga_alderson.9006
+	base = giga_alderson.9005
+	desc_clear = yes
+	desc = giga_alderson.9006.desc
+	option_clear = yes
+	location = target
+	option = {
+		name = giga_alderson.9006.a
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.9007
+			}
+		}
+	}
+}
+
+# where are the rest of you?
+
+country_event = {
+	id = giga_alderson.9007
+	base = giga_alderson.9005
+	desc_clear = yes
+	desc = giga_alderson.9007.desc
+	option_clear = yes
+	location = target
+	option = {
+		name = giga_alderson.9007.a
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.9008
+			}
+		}
+	}
+}
+
+# did you create us?
+
+country_event = {
+	id = giga_alderson.9008
+	base = giga_alderson.9005
+	desc_clear = yes
+	desc = giga_alderson.9008.desc
+	option_clear = yes
+	location = target
+	option = {
+		name = giga_alderson.9008.a
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.9009
+			}
+		}
+	}
+}
+
+# have you been watching us?
+
+country_event = {
+	id = giga_alderson.9009
+	base = giga_alderson.9005
+	desc_clear = yes
+	desc = giga_alderson.9009.desc
+	option_clear = yes
+	location = target
+	option = {
+		name = giga_alderson.9009.a
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.9010
+			}
+		}
+	}
+}
+
+# end of communication
+
+country_event = {
+	id = giga_alderson.9010
+	is_triggered_only = yes
+	picture = GFX_evt_decryption
+	title = giga_alderson.9010
+	desc = giga_alderson.9010.desc
+	location = event_target:situation.target
+}
+
+# KILL
+
+country_event = {
+	id = giga_alderson.9100
+	is_triggered_only = yes
+	picture = GFX_evt_night_raid
+	title = giga_alderson.9100
+	desc = giga_alderson.9100.desc
+	location = event_target:situation.target
+
+	option = {
+		name = giga_alderson.9100.a
+		add_tech_progress = {
+			tech = giga_tech_tetradimensional_engineering
+			progress = 0.05
+		}
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.9011
+			}
+		}
+	}
+}
+
+# conclusion
+
+country_event = {
+	id = giga_alderson.9011
+	is_triggered_only = yes
+	picture = GFX_evt_infested
+	title = giga_alderson.9011
+	desc = giga_alderson.9011.desc
+	location = event_target:situation.target
+
+	option = {
+		name = giga_alderson.9011.a
+		custom_tooltip = giga_alderson.9011.a.desc
+		hidden_effect = {
+			event_target:situation.target = { set_planet_flag = alderson_expedition_9_complete }
+			event_target:situation = { remove_situation_flag = expedition_underway }
+			event_target:situation = { set_situation_flag = edge_reached } 
+			event_target:giga_alderson_expedition_leader = {
+				kill_leader = {
+					show_notification = no
+				}
+			}
+		}
+	}
+}
+
+# Situation finisher
+
