@@ -11,6 +11,7 @@ giga_situation_alderson_origin = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
 			end = 100
+			custom_tooltip = giga_situation_alderson_origin_stage_effects
 		}
 
 		stage_2 = {
@@ -20,6 +21,7 @@ giga_situation_alderson_origin = {
 			on_first_enter = {
 				situation_event = { id = giga_alderson.1000 }
 			}
+			custom_tooltip = giga_situation_alderson_origin_stage_effects
 		}
 
 		stage_3 = {
@@ -29,6 +31,7 @@ giga_situation_alderson_origin = {
 			on_first_enter = {
 				situation_event = { id = giga_alderson.2000 }
 			}
+			custom_tooltip = giga_situation_alderson_origin_stage_effects
 		}
 
 		stage_4 = {
@@ -38,6 +41,7 @@ giga_situation_alderson_origin = {
 			on_first_enter = {
 				situation_event = { id = giga_alderson.3000 }
 			}
+			custom_tooltip = giga_situation_alderson_origin_stage_effects
 		}
 
 		stage_5 = {
@@ -47,6 +51,7 @@ giga_situation_alderson_origin = {
 			on_first_enter = {
 				situation_event = { id = giga_alderson.4000 }
 			}
+			custom_tooltip = giga_situation_alderson_origin_stage_effects
 		}
 
 		stage_6 = {
@@ -56,6 +61,7 @@ giga_situation_alderson_origin = {
 			on_first_enter = {
 				situation_event = { id = giga_alderson.5000 }
 			}
+			custom_tooltip = giga_situation_alderson_origin_stage_effects
 		}
 
 		stage_7 = {
@@ -65,6 +71,7 @@ giga_situation_alderson_origin = {
 			on_first_enter = {
 				situation_event = { id = giga_alderson.6000 }
 			}
+			custom_tooltip = giga_situation_alderson_origin_stage_effects
 		}
 
 		stage_8 = {
@@ -74,6 +81,7 @@ giga_situation_alderson_origin = {
 			on_first_enter = {
 				situation_event = { id = giga_alderson.7000 }
 			}
+			custom_tooltip = giga_situation_alderson_origin_stage_effects
 		}
 
 		stage_9 = {
@@ -83,6 +91,7 @@ giga_situation_alderson_origin = {
 			on_first_enter = {
 				situation_event = { id = giga_alderson.8000 }
 			}
+			custom_tooltip = giga_situation_alderson_origin_stage_effects
 		}
 
 		stage_10 = {
@@ -92,6 +101,7 @@ giga_situation_alderson_origin = {
 			on_first_enter = {
 				situation_event = { id = giga_alderson.9000 }
 			}
+			custom_tooltip = giga_situation_alderson_origin_stage_effects
 		}
 	}
 
@@ -173,8 +183,12 @@ giga_situation_alderson_origin = {
 	}
 
 	on_progress_complete = {
-		situation_event = {
-			id = giga_preset.1
+		custom_tooltip = giga_situation_alderson_origin_outcome
+		hidden_effect = {
+			situation_event = {
+				id = giga_alderson.10000
+			}
 		}
+		set_situation_locked = yes
 	}
 }

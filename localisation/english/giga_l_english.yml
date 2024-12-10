@@ -2068,20 +2068,6 @@
   origin_pangalactic:0 "Pangalactic Union"
   origin_pangalactic_desc:0 "This empire is the result of an incredible galactic effort to stop an empire from unleashing a hyperweapon."
 
-  #########################################
-  ### Alderson Disk Start #################
-  #########################################
-  origin_alderson:0 "Alderson Disk"
-
-  origin_alderson_desc:0 "You are the remnant of a long forgotten civilization, living in the vast expanse of an Alderson disk built by your ancestors. The other slices harbor intelligent life, however their arcane generators gave out long ago."
-
-  origin_alderson_effects:0 "Start on a $pc_alderson_slice_gaia_shattered$, a ruined part of a colossal Alderson Disk.\n- Species habitability is set to §L$pc_alderson_slice_gaia_shattered$§!.\n- §RThere will be no systems with guaranteed habitable worlds nearby§!.\n- Two powerful Pre-FTL nations will spawn alongside you on the Alderson."
-
-  giga_alderson_start_NAME:0 "$origin_alderson$"
-  giga_alderson_start_DESC:0 "$origin_alderson_desc$"
-
-  giga_start_screen_alderson:0 "We do not know what happened to our ancestors. Enemies, plague, civil war? They exist now as myths and legends, their knowledge and power lost. They somehow built this vast disk encompassing the entirety of our star's gravity well, now we live in the vast, echoing expanse designed to house a million times more people than are left.\n\nAs all but the last slice has fallen into disrepair and uselessness our people have been filled with a new sense of purpose: we must unite and take our place again in the stars, or we will be lost forever to history.\n\nWe need to get people working the §Y$job_miner$§! and §Y$job_technician$§! jobs before we run out of resources to expand.\n\nWe may have to displace some people from their preferred job to make that happen.\n\n§RAI cannot use this origin. Any generated predefined custom AI empires with this origin will be generate with $origin_default$ instead.§!"
-
   #############################################################################################################################################
   ### Civics ##################################################################################################################################
   #############################################################################################################################################

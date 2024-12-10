@@ -116,6 +116,7 @@ country_event = {
 			#set_planet_flag = giga_alderson_gaia
 			change_pc = pc_alderson_slice_gaia_shattered
 			set_planet_size = 90
+			save_event_target_as = alderson_world
 
 			trigger_megastructure_icon = yes
 			clear_planet_modifiers = yes
@@ -478,6 +479,7 @@ country_event = {
 		
 		start_situation = {
 			type = giga_situation_alderson_origin
+			target = event_target:alderson_world
 		}
 	}
 }
@@ -739,6 +741,12 @@ country_event = {
 		}
 
 		event_target:situation.target = { add_deposit = d_giga_alderson_expedition_2_labs }
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.2004
+				days = 5
+			}
+		}
 	}
 
 	option = {
@@ -756,6 +764,12 @@ country_event = {
 		}
 
 		event_target:situation.target = { add_deposit = d_giga_alderson_expedition_2_labs }
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.2004
+				days = 5
+			}
+		}
 	}
 
 	option = {
@@ -772,6 +786,12 @@ country_event = {
 		}
 
 		event_target:situation.target = { add_deposit = d_giga_alderson_expedition_2_labs }
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.2004
+				days = 5
+			}
+		}
 	}
 }
 
@@ -905,7 +925,15 @@ country_event = {
 		trigger = {
 			country_uses_consumer_goods = yes
 		}
-		hidden_effect = { event_target:situation.target = { set_planet_flag = alderson_expedition_3_trade } }
+		hidden_effect = { 
+			event_target:situation.target = { 
+				set_planet_flag = alderson_expedition_3_trade 
+			} 
+			country_event = {
+				id = giga_alderson.3004
+				days = 5
+			}
+		}
 		event_target:situation.target = { add_deposit = d_giga_alderson_expedition_3_trade }
 	}
 
@@ -915,17 +943,16 @@ country_event = {
 		trigger = {
 			country_uses_consumer_goods = no
 		}
-		hidden_effect = { event_target:situation.target = { set_planet_flag = alderson_expedition_3_energy } }
-		event_target:situation.target = { add_deposit = d_giga_alderson_expedition_3_energy }
-	}
-
-	after = {
-		owner = {
+		hidden_effect = { 
+			event_target:situation.target = { 
+				set_planet_flag = alderson_expedition_3_energy 
+			}
 			country_event = {
 				id = giga_alderson.3004
 				days = 5
 			}
 		}
+		event_target:situation.target = { add_deposit = d_giga_alderson_expedition_3_energy }
 	}
 }
 
@@ -1476,7 +1503,7 @@ country_event = {
 country_event = {
 	id = giga_alderson.7003
 	is_triggered_only = yes
-	picture = GFX_evt_tradestation_interior
+	picture = GFX_evt_treasure_pile
 	title = giga_alderson.7003
 	desc = giga_alderson.7003.desc
 	location = event_target:situation.target
@@ -1499,7 +1526,7 @@ country_event = {
 country_event = {
 	id = giga_alderson.7004
 	is_triggered_only = yes
-	picture = GFX_evt_binary_stars
+	picture = GFX_evt_ai_planet
 	title = giga_alderson.7004
 	desc = giga_alderson.7004.desc
 	location = event_target:situation.target
@@ -1552,7 +1579,7 @@ situation_event = {
 	}
 }
 
-# begin eight expedition
+# begin eighth expedition
 
 country_event = {
 	id = giga_alderson.8001
@@ -1640,7 +1667,7 @@ country_event = {
 country_event = {
 	id = giga_alderson.8004
 	is_triggered_only = yes
-	picture = GFX_evt_infested
+	picture = GFX_evt_drilling_for_gas
 	title = giga_alderson.8004
 	desc = giga_alderson.8004.desc
 	location = event_target:situation.target
@@ -1757,7 +1784,7 @@ situation_event = {
 country_event = {
 	id = giga_alderson.9001
 	is_triggered_only = yes
-	picture = GFX_evt_grand_speech
+	picture = GFX_evt_spy_orb
 	title = giga_alderson.9001
 	desc = giga_alderson.9001.desc
 	location = event_target:situation.target
@@ -1987,6 +2014,19 @@ country_event = {
 	title = giga_alderson.9010
 	desc = giga_alderson.9010.desc
 	location = event_target:situation.target
+	option = {
+		name = giga_alderson.9010.a
+		add_tech_progress = {
+			tech = giga_tech_tetradimensional_engineering
+			progress = 0.1
+		}
+		hidden_effect = {
+			country_event = {
+				id = giga_alderson.9011
+				days = 5
+			}
+		}
+	}
 }
 
 # KILL
@@ -2008,6 +2048,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = giga_alderson.9011
+				days = 5
 			}
 		}
 	}
@@ -2018,7 +2059,7 @@ country_event = {
 country_event = {
 	id = giga_alderson.9011
 	is_triggered_only = yes
-	picture = GFX_evt_infested
+	picture = GFX_evt_grand_speech
 	title = giga_alderson.9011
 	desc = giga_alderson.9011.desc
 	location = event_target:situation.target
@@ -2041,3 +2082,20 @@ country_event = {
 
 # Situation finisher
 
+situation_event = {
+	id = giga_alderson.10000
+	is_triggered_only = yes
+	picture = GFX_evt_alderson
+	title = giga_alderson.10000
+	desc = giga_alderson.10000.desc
+	location = target
+
+	option = {
+		name = giga_alderson.10000.a
+
+		event_target:alderson_world = {
+			destroy_situation = this
+		}
+		clear_global_event_target = giga_birch_origin_situation_@owner
+	}
+}

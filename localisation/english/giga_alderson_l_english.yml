@@ -1,0 +1,19 @@
+﻿l_english:
+  #########################################
+  ### Alderson Disk Start #################
+  #########################################
+  origin_alderson:0 "Alderson Disk"
+
+  origin_alderson_desc:0 "This civilization evolved on an ancient, decaying Alderson Disk. Upon achieving spaceflight and understanding their situation, they dedicate themselves to exploring their home and restoring it to it's true potential."
+
+  origin_alderson_effects:0 "Start on a $pc_alderson_slice_gaia_shattered$, a ruined part of a colossal Alderson Disk.\n- Species habitability is set to §L$pc_alderson_slice_gaia_shattered$§!.\n- §RThere will be no systems with guaranteed habitable worlds nearby§!."
+
+  giga_alderson_start_NAME:0 "$origin_alderson$"
+  giga_alderson_start_DESC:0 "$origin_alderson_desc$"
+
+  giga_start_screen_alderson:0 "For countless millenia, our people lived in what seemed like a paradise. But once we achieved spaceflight, we realised something. We were on the last, crumbling segment of an enormous structure. Everything else had long collapsed into ruin. We were left with only one option.\n\nWe began mapping more of what remains of the structure. Countless people united, under a single purpose; reach the edge of the Disk, and find a way to repair it, before we too fade into nothingness."
+
+  # Special projects
+
+  giga_alderson_origin_expedition_3:0 "Repairing the Station"
+  giga_alderson_origin_expedition_7:0 "Repairing the Synthesizer"

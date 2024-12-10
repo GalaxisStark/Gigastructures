@@ -1,3 +1,5 @@
+# base labs
+
 d_giga_alderson_origin_home_labs = {
 	is_for_colonizable = yes
 	category = deposit_cat_energy
@@ -8,4 +10,143 @@ d_giga_alderson_origin_home_labs = {
 	planet_modifier = {
 		district_giga_origin_alderson_lab_max = 2
 	}
+}
+
+# expedition 1
+
+d_giga_alderson_expedition_1_cg = {
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+	icon = d_city_ruins
+
+	planet_modifier = {
+		planet_max_districts_add = 5
+		district_giga_origin_alderson_lab_max = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = { 
+			exists = owner
+			owner = { 
+				is_crafter_empire = no
+			}
+		}
+		job_artisan_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = { 
+			exists = owner
+			owner = { 
+				is_crafter_empire = yes
+			}
+		}
+		job_artificer_add = 4
+	}
+}
+
+d_giga_alderson_expedition_1_alloys = {
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+	icon = d_city_ruins
+
+	planet_modifier = {
+		planet_max_districts_add = 5
+		district_giga_origin_alderson_lab_max = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = { 
+			exists = owner
+			owner = { 
+				is_catalytic_empire = no
+				is_gestalt = no
+			}
+		}
+		job_foundry_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = { 
+			exists = owner
+			owner = { 
+				is_catalytic_empire = yes
+				is_gestalt = no
+			}
+		}
+		job_catalytic_technician_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_catalytic_empire = no
+				is_gestalt = yes
+			}
+		}
+		job_alloy_drone_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_catalytic_empire = yes
+				is_gestalt = yes
+			}
+		}
+		job_catalytic_drone_add = 4
+	}
+}
+
+d_giga_alderson_expedition_1_energy = {
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+	icon = d_city_ruins
+
+	planet_modifier = {
+		planet_max_districts_add = 5
+		district_giga_origin_alderson_lab_max = 2
+		job_technician_drone_add = 4
+	}
+}
+
+# expedition 2
+
+d_giga_alderson_expedition_2_labs = {
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+	icon = d_central_spire
+
+	planet_modifier = {
+		district_giga_origin_alderson_lab_max = 2
+		planet_jobs_engineering_research_produces_mult = 0.15
+		planet_jobs_physics_research_produces_mult = 0.15
+		planet_jobs_society_research_produces_mult = 0.15
+	}
+}
+
+# expedition 3
+
+d_giga_alderson_expedition_3_trade = {
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+	icon = d_tradestation_interior
+
+}
+
+d_giga_alderson_expedition_3_energy = {
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+	icon = d_tradestation_interior
+
 }
