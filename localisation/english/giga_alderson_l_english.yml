@@ -25,35 +25,35 @@
   d_giga_alderson_origin_home_labs:0 "Ancient Labs"
   d_giga_alderson_origin_home_labs_desc:0 "The remains of ancient laboratories left by the creators of the Alderson. They have been repurposed to suit our needs."
 
-  d_giga_alderson_expedition_1_cg:0 ""
-  d_giga_alderson_expedition_1_cg_desc:0 ""
+  d_giga_alderson_expedition_1_cg:0 "Commercialised Ruins"
+  d_giga_alderson_expedition_1_cg_desc:0 "These are the ruins of a long-dead primitive species, repurposed to produce commercial goods for our citizens."
 
-  d_giga_alderson_expedition_1_alloys:0 ""
-  d_giga_alderson_expedition_1_alloys_desc:0 ""
+  d_giga_alderson_expedition_1_alloys:0 "Militarised Ruins"
+  d_giga_alderson_expedition_1_alloys_desc:0 "These are the ruins of a long-dead primitive species, repurposed to produce alloys for our military."
 
-  d_giga_alderson_expedition_1_energy:0 ""
-  d_giga_alderson_expedition_1_energy_desc:0 ""
+  d_giga_alderson_expedition_1_energy:0 "Energised Ruins"
+  d_giga_alderson_expedition_1_energy_desc:0 "These are the ruins of a long-dead primitive species, repurposed to provide energy for the collective."
 
-  d_giga_alderson_expedition_2_labs:0 ""
-  d_giga_alderson_expedition_2_labs_desc:0 ""
+  d_giga_alderson_expedition_2_labs:0 "Restored Laboratory"
+  d_giga_alderson_expedition_2_labs_desc:0 "A former prominent genetics laboratory, now retooled to aid research across the segment."
 
-  d_giga_alderson_expedition_3_trade:0 ""
-  d_giga_alderson_expedition_3_trade_desc:0 ""
+  d_giga_alderson_expedition_3_trade:0 "Trade Hub"
+  d_giga_alderson_expedition_3_trade_desc:0 "A thriving hub of trade and commerce that provides plenty of opportunities for entrepeneurship and innovation."
 
-  d_giga_alderson_expedition_3_energy:0 ""
-  d_giga_alderson_expedition_3_energy_desc:0 ""
+  d_giga_alderson_expedition_3_energy:0 "Repurposed Trade Hub"
+  d_giga_alderson_expedition_3_energy_desc:0 "What was once a place for \"commerce\", as the individualist empires put it, has been repurposed to produce huge quantities of energy for the collective."
 
-  d_giga_alderson_expedition_5_centre:0 ""
-  d_giga_alderson_expedition_5_centre_desc:0 ""
+  d_giga_alderson_expedition_5_centre:0 "Control Centre"
+  d_giga_alderson_expedition_5_centre_desc:0 "An enormous control centre that marks the halfway point between the edges of the disk. Its presence unifies our people and inspires a greater work ethic."
 
-  d_giga_alderson_expedition_6_energy:0 ""
-  d_giga_alderson_expedition_6_energy_desc:0 ""
+  d_giga_alderson_expedition_6_energy:0 "Inner Edge Solar Collectors"
+  d_giga_alderson_expedition_6_energy_desc:0 "A gigantic array of solar panels, dedicated to producing huge volumes of pure energy for our empire."
 
-  d_giga_alderson_expedition_7_minerals:0 ""
-  d_giga_alderson_expedition_7_minerals_desc:0 ""
+  d_giga_alderson_expedition_7_minerals:0 "Repaired Matter Synthesizer"
+  d_giga_alderson_expedition_7_minerals_desc:0 "The synthesizer, now repaired, produces endless minerals from a negligible energy output. Sometimes the minerals fuse themselves into alloys. Exactly how it works is unknown."
 
-  d_giga_alderson_expedition_8_rares:0 ""
-  d_giga_alderson_expedition_8_rares_desc:0 ""
+  d_giga_alderson_expedition_8_rares:0 "The Wasteland"
+  d_giga_alderson_expedition_8_rares_desc:0 "Though it is uninhabitable, the pollutants and radioactive materials here can be refined into rare and strategically significant resources."
 
 # district
   district_giga_origin_alderson_lab:0 "Repurposed Laboratory"
