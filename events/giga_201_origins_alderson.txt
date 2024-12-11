@@ -480,6 +480,9 @@ country_event = {
 		start_situation = {
 			type = giga_situation_alderson_origin
 			target = event_target:alderson_world
+			effect = {
+				save_global_event_target_as = giga_birch_origin_situation_@owner
+			}
 		}
 	}
 }
@@ -1489,12 +1492,6 @@ country_event = {
 			owner = root
 			location = event_target:situation.target
 		}
-		hidden_effect = {
-			country_event = {
-				id = giga_alderson.7003
-				days = 15
-			}
-		}
 	}
 }
 
@@ -2096,6 +2093,6 @@ situation_event = {
 		event_target:alderson_world = {
 			destroy_situation = this
 		}
-		clear_global_event_target = giga_birch_origin_situation_@owner
+		clear_global_event_target = giga_alderson_origin_situation_@owner
 	}
 }

@@ -140,6 +140,12 @@ d_giga_alderson_expedition_3_trade = {
 	potential = { always = no }
 	icon = d_tradestation_interior
 
+	planet_modifier = {
+		district_giga_origin_alderson_lab_max = 2
+		trade_value_mult = 0.25
+		job_trader_per_pop = 0.1
+		planet_max_districts_add = 10
+	}
 }
 
 d_giga_alderson_expedition_3_energy = {
@@ -149,4 +155,115 @@ d_giga_alderson_expedition_3_energy = {
 	potential = { always = no }
 	icon = d_tradestation_interior
 
+	planet_modifier = {
+		district_giga_origin_alderson_lab_max = 2
+		planet_jobs_energy_produces_mult = 0.3
+		job_technician_drone_per_pop = 0.1
+		planet_max_districts_add = 10
+	}
+}
+
+# expedition 5
+
+d_giga_alderson_expedition_5_centre = {
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+	icon = d_glitchy_matrix
+
+	planet_modifier = {
+		country_resource_max_add = 10000
+		planet_jobs_produces_mult = 0.25
+		planet_stability_mult = 0.1
+		district_giga_origin_alderson_lab_max = 5
+	}
+}
+
+# expedition 6
+
+d_giga_alderson_expedition_6_energy = {
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+	icon = d_solar_array
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		district_giga_origin_alderson_lab_max = 2
+		planet_jobs_energy_produces_mult = 0.3
+		job_technician_drone_per_pop = 0.2
+		planet_max_districts_add = 10
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_gestalt = no
+			}
+		}
+		district_giga_origin_alderson_lab_max = 2
+		planet_jobs_energy_produces_mult = 0.3
+		job_technician_per_pop = 0.2
+		planet_max_districts_add = 10
+	}
+}
+
+# expedition 7
+
+d_giga_alderson_expedition_7_minerals = {
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+	icon = d_station_reactor
+
+	planet_modifier = {
+		district_giga_origin_alderson_lab_max = 3
+		planet_jobs_minerals_produces_mult = 0.3
+		planet_jobs_minerals_upkeep_mult = -0.15
+		planet_jobs_alloys_produces_mult = 0.05
+	}
+}
+
+# expedition 8
+
+d_giga_alderson_expedition_8_rares = {
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+	icon = d_radioactive_wasteland
+
+	planet_modifier = {
+		district_giga_origin_alderson_lab_max = 3
+		planet_jobs_exotic_gases_produces_mult = 0.15
+		planet_jobs_rare_crystals_produces_mult = 0.15
+		planet_jobs_volatile_motes_produces_mult = 0.15
+		planet_max_districts_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_gestalt = no
+			}
+		}
+		job_translucer_per_pop = 0.05
+		job_gas_refiner_per_pop = 0.05
+		job_chemist_per_pop = 0.05
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		job_translucer_drone_per_pop = 0.05
+		job_gas_refiner_drone_per_pop = 0.05
+		job_chemist_drone_per_pop = 0.05
+	}
 }

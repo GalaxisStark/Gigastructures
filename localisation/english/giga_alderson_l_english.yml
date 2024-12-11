@@ -17,3 +17,66 @@
 
   giga_alderson_origin_expedition_3:0 "Repairing the Station"
   giga_alderson_origin_expedition_7:0 "Repairing the Synthesizer"
+  giga_alderson_origin_expedition_3_desc:0 "Repairing this station will provide a huge boost to our economy."
+  giga_alderson_origin_expedition_7_desc:0 "Repairing the matter synthesizer will improve mineral output and reduce the mineral upkeep of our jobs."
+
+# deposits
+
+  d_giga_alderson_origin_home_labs:0 "Ancient Labs"
+  d_giga_alderson_origin_home_labs_desc:0 "The remains of ancient laboratories left by the creators of the Alderson. They have been repurposed to suit our needs."
+
+  d_giga_alderson_expedition_1_cg:0 ""
+  d_giga_alderson_expedition_1_cg_desc:0 ""
+
+  d_giga_alderson_expedition_1_alloys:0 ""
+  d_giga_alderson_expedition_1_alloys_desc:0 ""
+
+  d_giga_alderson_expedition_1_energy:0 ""
+  d_giga_alderson_expedition_1_energy_desc:0 ""
+
+  d_giga_alderson_expedition_2_labs:0 ""
+  d_giga_alderson_expedition_2_labs_desc:0 ""
+
+  d_giga_alderson_expedition_3_trade:0 ""
+  d_giga_alderson_expedition_3_trade_desc:0 ""
+
+  d_giga_alderson_expedition_3_energy:0 ""
+  d_giga_alderson_expedition_3_energy_desc:0 ""
+
+  d_giga_alderson_expedition_5_centre:0 ""
+  d_giga_alderson_expedition_5_centre_desc:0 ""
+
+  d_giga_alderson_expedition_6_energy:0 ""
+  d_giga_alderson_expedition_6_energy_desc:0 ""
+
+  d_giga_alderson_expedition_7_minerals:0 ""
+  d_giga_alderson_expedition_7_minerals_desc:0 ""
+
+  d_giga_alderson_expedition_8_rares:0 ""
+  d_giga_alderson_expedition_8_rares_desc:0 ""
+
+# district
+  district_giga_origin_alderson_lab:0 "Repurposed Laboratory"
+  district_giga_origin_alderson_lab_plural:0 "Repurposed Laboratories"
+  district_giga_origin_alderson_lab_desc:0 "Technology centres left behind by the creators of the Alderson, full of ancient technology."
+
+# situation
+
+  giga_situation_alderson_origin:0 "Exploring the Disk"
+  giga_situation_alderson_origin_type:0 "$giga_situation_alderson_origin$"
+
+  giga_situation_alderson_origin_monthly_change_tooltip:0 "The progress of this situation is dependent on the §YApproach§! we pick."
+  giga_situation_alderson_origin_stage_effects:0 "We begin another expedition to explore more of the disk."
+
+  giga_situation_alderson_origin_approach_regular:0 "Standard Budget"
+  giga_situation_alderson_origin_approach_regular_desc:0 "The exploration of the disk is a priority of our empire. A reasonable amount of resources and manpower has been allocated."
+
+  giga_situation_alderson_origin_approach_extra:0 "Large Budget"
+  giga_situation_alderson_origin_approach_extra_desc:0 "Mapping the disk is our absolute top priority. Excessive amounts of resources have been allocated, even if it hinders our economic capacity in other areas."
+  giga_situation_alderson_approach_extra_progress:0 "$giga_situation_alderson_origin_approach_extra$"
+
+  giga_situation_alderson_origin_approach_frugal:0 "Restricted Budget"
+  giga_situation_alderson_origin_approach_frugal_desc:0 "The explorers of the disk will have to make do with minimal resources. We currently have other priotrities."
+  giga_situation_alderson_approach_frugal_progress:0 "$giga_situation_alderson_origin_approach_frugal$"
+
+# events
