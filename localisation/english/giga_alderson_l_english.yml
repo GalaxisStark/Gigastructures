@@ -64,6 +64,7 @@
 
   giga_situation_alderson_origin:0 "Exploring the Disk"
   giga_situation_alderson_origin_type:0 "$giga_situation_alderson_origin$"
+  giga_situation_alderson_origin_desc:0 ""
 
   giga_situation_alderson_origin_monthly_change_tooltip:0 "The progress of this situation is dependent on the §YApproach§! we pick."
   giga_situation_alderson_origin_stage_effects:0 "We begin another expedition to explore more of the disk."
@@ -73,10 +74,50 @@
 
   giga_situation_alderson_origin_approach_extra:0 "Large Budget"
   giga_situation_alderson_origin_approach_extra_desc:0 "Mapping the disk is our absolute top priority. Excessive amounts of resources have been allocated, even if it hinders our economic capacity in other areas."
-  giga_situation_alderson_approach_extra_progress:0 "$giga_situation_alderson_origin_approach_extra$"
+  giga_situation_alderson_origin_approach_extra_progress:0 "Large Budget"
 
   giga_situation_alderson_origin_approach_frugal:0 "Restricted Budget"
   giga_situation_alderson_origin_approach_frugal_desc:0 "The explorers of the disk will have to make do with minimal resources. We currently have other priotrities."
-  giga_situation_alderson_approach_frugal_progress:0 "$giga_situation_alderson_origin_approach_frugal$"
+  giga_situation_alderson_origin_approach_frugal_progress:0 "Restricted Budget"
 
-# events
+  giga_situation_alderson_origin_edge_reached:0 "Reached the outer edge"
+
+  giga_situation_alderson_origin_outcome:0 "We will have explored the entirety of our segment, and hopefully find a way to restore it to it's full potential."
+
+### EXPEDITIONS ###
+
+# expedition 1
+
+  giga_alderson.1001:0 "The First Expedition"
+  giga_alderson.1001.desc:0 "The first flight of "
+  giga_alderson.1001.a:0 ""
+
+  giga_alderson.2001:0 "The Second Expedition"
+
+
+
+  giga_alderson.3001:0 "The Third Expedition"
+
+
+
+  giga_alderson.4001:0 "The Fourth Expedition"
+
+
+
+  giga_alderson.5001:0 "The Fifth Expedition"
+
+
+
+  giga_alderson.6001:0 "The Sixth Expedition"
+
+
+
+  giga_alderson.7001:0 "The Seventh Expedition"
+
+
+
+  giga_alderson.8001:0 "The Eigth Expedition"
+
+
+
+  giga_alderson.9001:0 "The Final Expedition"
