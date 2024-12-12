@@ -732,7 +732,7 @@ country_event = {
 		name = giga_alderson.2003.a # non-machine, no gene tech
 		trigger = {
 			owner = {
-				is_machine_empire = no
+				is_mechanical_empire = no
 				NOT = {
 					has_technology = tech_gene_tailoring
 				}
@@ -755,7 +755,7 @@ country_event = {
 	option = {
 		name = giga_alderson.2003.a # non-machine, gene tech
 		trigger = {
-			is_machine_empire = no
+			is_mechanical_empire = no
 			has_technology = tech_gene_tailoring
 		}
 
@@ -778,7 +778,7 @@ country_event = {
 	option = {
 		name = giga_alderson.2003.b # machine
 		trigger = {
-			is_machine_empire = yes
+			is_mechanical_empire = yes
 		}
 
 		add_monthly_resource_mult = {
@@ -1873,6 +1873,7 @@ country_event = {
 	diplomatic = yes
 	diplomatic_title = giga_alderson.9005.title
 	location = event_target:situation.target
+	desc = giga_alderson.9005.desc
 	picture_event_data = {
 		portrait = event_target:giga_alderson_architect_ruler
 		planet_background = pc_gaia

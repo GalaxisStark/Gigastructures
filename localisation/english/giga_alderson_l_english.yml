@@ -112,11 +112,26 @@
   giga_alderson.2001.desc:0 "Our expeditionary forces have rebuilt themselves at the reestablished industry centre. Now lead by [giga_alderson_expedition_leader.GetName], they will once again embark on an expedition to discover more of the disk.\n\nThey don't know what they will find, but they are well-prepared for anything they come across."
   giga_alderson.2001.a:0 "Off they go again."
 
-  giga_alderson.2002:0 ""
+  giga_alderson.2002:0 "Ancient Laboratories"
+  giga_alderson.2002.desc:0 "[giga_alderson_expedition_leader.GetName] and their expedition have discovered the remains of an ancient laboratory, likely constructed and used by the creators of the disk. Most of the lab itself was covered in vegetation, but unlike anything we've seen before.\n\nInitial tests of the greenery suggest extensive genetic modification, improving the plant's durability, growth speed and glucose production. Searching the lab's interior will likely yield great results."
+  giga_alderson.2002.a:0 "An excellent find."
+
+  giga_alderson.2003:0 "A Lucky Discovery"
+  giga_alderson.2003.desc:0 "While searching the interior of the lab, a researcher accidentally activated a computing device left behind by the previous users. By some unknown miracle, it was still connected to a power source, and we were thus able to recover the data on the device.\n\nWhile most of the data was corrupted or otherwise useless, we were able to decode extensive research into genetic manipulation. We have thus added this to our databanks for our own scientists to use. The researcher who discovered this has recieved a commendation from [giga_alderson_expedition_leader.GetName]."
+  giga_alderson.2003.a:0 "This will greatly boost our research efforts."
+  giga_alderson.2003.b:0 "This does not directly apply to us, but is still useful."
+
+  giga_alderson.2004:0 "Cleaning Up"
+  giga_alderson.2004.desc:0 "While we got lucky with the computing device we initially discovered, no other data was directly recoverable from the laboratory. When powered on, all data was lost. Fortunately, the computers still work.\n\nThe expedition spent some time clearing the vegetation away, enabling us to utilise the laboratory to its full capabilities.\n\n [giga_alderson_expedition_leader.GetName] reports that the researchers remaining behind have improved their productivity massively, which should yield impressive scientific results. Now, we prepare for another expedition, and another leap forward."
+  giga_alderson.2004.a:0 "Our future is looking bright."
+
+# expedition 3
 
   giga_alderson.3001:0 "The Third Expedition"
+  giga_alderson.3001.desc:0 "After replenishing themselves once again, the expeditionary force begins another journey into the unknown.\n\nThe former leader has stepped down, replaced by [giga_alderson_expedition_leader.GetName]. Great technological leaps developed by the laboratories discovered in the Second Expedition, such as better propulsion and more powerful sensors, have greatly aided our exploration efforts.\n\nWe expect a report soon."
+  giga_alderson.3001.a:0 "For the [Root.GetName]."
 
-
+  giga_alderson.3002:0 ""
 
   giga_alderson.4001:0 "The Fourth Expedition"
 
