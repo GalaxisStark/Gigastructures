@@ -89,12 +89,30 @@
 # expedition 1
 
   giga_alderson.1001:0 "The First Expedition"
-  giga_alderson.1001.desc:0 "The first flight of "
-  giga_alderson.1001.a:0 ""
+  giga_alderson.1001.desc:0 "For millenia, we believed our home was an endless, flat paradise. We had no reason to expand beyond a relatively small area. That all changed once we took to the stars for the first time.\n\nThe land we called home was on the final, crumbling segment of an enormous Alderson Disk, constructed countless aeons ago by an unknown power. We knew right then that we had to explore the entirety of our segment and find a way to restore it to it's former glory.\n\nWe formed the Exploration Division and began preparing for our first expedition, led by [giga_alderson_expedition_leader.GetName]. Now, equipped with a suitable military force, provisions, and dedicated explorers, the expedition can go forth. We don't know what we'll find, but we can only hope it will help us in our quest."
+  giga_alderson.1001.a:0 "We will reach the edge and restore our home."
+
+  giga_alderson.1002:0 "Industrial Ruins"
+  giga_alderson.1002.desc:0 "Our expedition has discovered the ruins of an industrial society. The design is clearly not [Root.GetSpeciesAdj], but is quite advanced for a primitive civilization. Based on the initial analysis by [giga_alderson_expedition_leader.GetName] and their team, the ruins have been abandoned for at least a century.\n\n[giga_alderson_expedition_leader.GetName] is currently forming a more detailed report, but the opportunities from this discovery seem promising."
+  giga_alderson.1002.a:0 "We are children among bones."
+
+  giga_alderson.1003:0 "Repair, Reuse, Recycle"
+  giga_alderson.1003.desc:0 "The report from [giga_alderson_expedition_leader.GetName] has come through, and the results are even greater than anticipated. Unfortunately, no remains of the species who created the factories were able to be recovered. However, the ruins can be repurposed to suit our own needs with minimal repairs. [giga_alderson_expedition_leader.GetName] has outlined how it can best be used, with two main options available to us."
+  giga_alderson.1003.a:0 "Use the factories to produce goods for the people."
+  giga_alderson.1003.b:0 "Use the factories to produce alloys for our military."
+  giga_alderson.1003.c:0 "Repurpose the factories into a power plant and produce energy."
+
+  giga_alderson.1004:0 "Into the Future"
+  giga_alderson.1004.desc:0 "The discovery of a primitive civilisation has only confirmed our mission as the best course of action. How many countless species have lived and died on this disk, never reaching the stars and seeing the truth? If we are the first to go beyond our home, then we must also be the ones to repair it.\n\nNow that we have the industrial complexes operating at full capacity, our explorers can recuperate and rebuild the expeditionary force, greater and stronger than before. The next expedition will take us further. We'll reach the edge before we know it."
+  giga_alderson.1004.a:0 "A sign of good things to come."
+
+# expedition 2
 
   giga_alderson.2001:0 "The Second Expedition"
+  giga_alderson.2001.desc:0 "Our expeditionary forces have rebuilt themselves at the reestablished industry centre. Now lead by [giga_alderson_expedition_leader.GetName], they will once again embark on an expedition to discover more of the disk.\n\nThey don't know what they will find, but they are well-prepared for anything they come across."
+  giga_alderson.2001.a:0 "Off they go again."
 
-
+  giga_alderson.2002:0 ""
 
   giga_alderson.3001:0 "The Third Expedition"
 
