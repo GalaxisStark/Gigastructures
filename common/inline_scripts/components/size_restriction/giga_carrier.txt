@@ -8,6 +8,8 @@ size_restriction = {
     cosmo_crisis_titan
     offspring_cruiser
     offspring_battleship
+    nanite_swarmer
+    nanite_interdictor
 
     # Gigas
     humiliator

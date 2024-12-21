@@ -2,6 +2,7 @@ size_restriction = {
     corvette
     crisis_corvette
     offspring_corvette
+    nanite_swarmer
 
     # Gigas
     hornet

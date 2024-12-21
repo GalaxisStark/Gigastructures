@@ -12,6 +12,7 @@ size_restriction = {
     offspring_destroyer
     offspring_cruiser
     offspring_battleship
+    nanite_interdictor
 
     # Gigas
     stalker

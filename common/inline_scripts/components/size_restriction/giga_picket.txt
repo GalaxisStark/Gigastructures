@@ -9,6 +9,7 @@ size_restriction = {
     offspring_corvette
     offspring_destroyer
     offspring_cruiser
+    nanite_swarmer
 
     # Gigas
     hornet
