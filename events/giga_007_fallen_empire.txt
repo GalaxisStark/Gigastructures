@@ -1787,7 +1787,7 @@ country_event = {
 		random_system_within_border = {
 			limit = { 
 				has_no_non_gate_megastructure = yes
-				NOT = { any_system_planet = { is_colonizable = yes } } 
+				NOT = { any_system_planet = { is_colony = yes } }
 			}
 			random_system_planet = {
 				limit = { is_star = yes }
