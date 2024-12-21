@@ -1,0 +1,12 @@
+size_restriction = {
+    frigate
+    crisis_destroyer
+    cruiser
+    offspring_cruiser
+    cosmo_crisis_destroyer
+
+    # Gigas
+    hornet
+    stalker
+    humiliator
+}

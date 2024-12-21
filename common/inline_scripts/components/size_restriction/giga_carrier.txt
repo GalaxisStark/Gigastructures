@@ -1,0 +1,22 @@
+size_restriction = {
+    cruiser
+    battleship
+    titan
+    juggernaut
+    star_eater
+    cosmo_crisis_battlecruiser
+    cosmo_crisis_titan
+    offspring_cruiser
+    offspring_battleship
+
+    # Gigas
+    humiliator
+    apex
+    sovereign
+
+    # NSC
+    Carrier
+    Flagship
+    escortcarrier
+    explorationship
+}

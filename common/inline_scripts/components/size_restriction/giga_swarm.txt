@@ -1,0 +1,17 @@
+size_restriction = {
+    corvette
+    crisis_corvette
+    offspring_corvette
+
+    # Gigas
+    hornet
+
+    # NSC
+    StrikeCruiser
+    Battlecruiser
+    Carrier
+    Dreadnought
+    Flagship
+    escortcarrier
+    explorationship
+}
