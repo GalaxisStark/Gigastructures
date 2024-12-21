@@ -2682,6 +2682,7 @@ giga_preset_00 = {
 					is_sbtg_activated = yes 
 				}
 			}
+			remove_flags_fe_planetcrafts = yes
 			set_global_flag = giga_fe_planetcrafts_3
 		}
 		else_if = {
@@ -2692,9 +2693,11 @@ giga_preset_00 = {
 					has_global_flag = has_nsc_active
 				}
 			}
+			remove_flags_fe_planetcrafts = yes
 			set_global_flag = giga_fe_planetcrafts_2
 		}
 		else = {
+			remove_flags_fe_planetcrafts = yes
 			set_global_flag = giga_fe_planetcrafts_1
 		}
 		# Buff aeternum for acot
