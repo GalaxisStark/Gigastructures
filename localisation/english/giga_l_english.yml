@@ -343,6 +343,7 @@
   requires_further_stars:0 "$TRIGGER_FAIL$This star is too close to another star."
   requires_not_recently_built_habitat:0 "$TRIGGER_FAIL$We must wait before building another $habitat_0$."
   requires_not_terraforming:0 "$TRIGGER_FAIL$Can't build around a planet undergoing Terraforming."
+  requires_no_existing_blokkat_gigarelay: "$TRIGGER_FAIL$Can only have one Hyperdimensional Destabilizer at once."
 
 
   must_build_around_asteroid:0 "$TRIGGER_FAIL$Must be built around an asteroid."
