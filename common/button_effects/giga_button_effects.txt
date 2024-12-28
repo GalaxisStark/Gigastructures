@@ -1287,7 +1287,7 @@ giga_galactic_core_aet_4_disabled = {
 				has_global_flag = giga_core_inactive_empty
 				has_global_flag = giga_core_active
 				has_global_flag = giga_core_always_empty
-				NOT = { has_global_flag = sofe_activated }
+				NOT = { is_sbtg_activated = yes }
 			}
 		}
 	}
