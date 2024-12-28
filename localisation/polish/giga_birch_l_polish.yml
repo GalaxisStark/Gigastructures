@@ -1245,7 +1245,7 @@
   
   giga_birch.4006:99 "Manufactory Restoration Complete"
   giga_birch.4006.desc:99 "The project to restore the ancient manufactory complex on the machine level has been completed successfully. The facility is already beginning to stir, ancient machinery roaring into action for the first time in centuries.\n\nThis should increase our manufacturing throughput significantly."
-  giga_birch.4006.a:99 "A new dawn for [root.GetAdj] industry."
+  giga_birch.4006.a:99 "A new dawn for [root.owner.GetAdj] industry."
   giga_birch.4006.a.desc:99 "Several new jobs have been added to the §Y$d_giga_birch_expedition_4$§! feature on [situation.target.GetName]."
   
   #########################################
