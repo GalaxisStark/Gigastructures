@@ -4786,6 +4786,9 @@
   paluush_shield:0 "Psionic Forcefield"
   paluush_shield_desc:0 "The inhabitants of this world possess incredible psionic abilities, owing to their gigantic size. Somehow, they are capable of intercepting and deflecting any amount of orbital bombardment thrown at them. Our scientists believe that something on this world might be multiplying their psionic potential tenfold."
 
+  alderson_shield:0 "Ancient Forcefield"
+  alderson_shield_desc:0 "Whichever empire built this Alderson Disk placed a vast network of shield projectors across the disks surface. Many are beyond destroyed by now but the projectors on this disk seem to be functioning. Any attempt at bombardment will be severely slowed, necessitating a ground invasion."
+
   feeble_ai_mega_buff:0 "Feeble AI"
   feeble_ai_mega_buff_desc:0 "A little push in the right direction"
 
