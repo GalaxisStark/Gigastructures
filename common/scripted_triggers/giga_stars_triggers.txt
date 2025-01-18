@@ -463,6 +463,7 @@ ehof_category_remnants = {
 is_star_class_sc_ehof_black_hole = { is_star_class = sc_ehof_black_hole }
 is_star_class_sc_microquasar_1 = { is_star_class = sc_microquasar_1 }
 is_star_class_sc_microquasar_2 = { is_star_class = sc_microquasar_2 }
+is_star_class_sc_giga_o_star = { is_star_class = sc_giga_o_star }
 is_star_class_sc_o = { is_star_class = sc_o }
 is_star_class_sc_o_super = { is_star_class = sc_o_super }
 is_star_class_sc_o_hyper = { is_star_class = sc_o_hyper }

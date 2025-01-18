@@ -479,22 +479,6 @@ ndb_new_pick_target_type_1 = {
 	}
 
 	option = {
-		name = "sc_o"
-		custom_gui = "ehof_mainui_option_small"
-		trigger = {
-
-			ndb_new_pick_target_type_1 = {
-				condition = is_star_class_sc_o
-
-			}
-		}
-		hidden_effect = {
-			set_country_flag = ndb_target_is_star_class_sc_o
-			country_event = { id = giga_ndb.005 }
-		}
-	}
-
-	option = {
 		name = "sc_p_purple"
 		custom_gui = "ehof_mainui_option_small"
 		trigger = {
@@ -591,6 +575,38 @@ ndb_new_pick_target_type_1 = {
 		}
 		hidden_effect = {
 			set_country_flag = ndb_target_is_star_class_sc_m_giant
+			country_event = { id = giga_ndb.005 }
+		}
+	}
+
+	option = {
+		name = "sc_giga_o_star"
+		custom_gui = "ehof_mainui_option_small"
+		trigger = {
+
+			ndb_new_pick_target_type_1 = {
+				condition = is_star_class_sc_giga_o_star
+
+			}
+		}
+		hidden_effect = {
+			set_country_flag = ndb_target_is_star_class_sc_giga_o_star
+			country_event = { id = giga_ndb.005 }
+		}
+	}
+
+	option = {
+		name = "sc_o"
+		custom_gui = "ehof_mainui_option_small"
+		trigger = {
+
+			ndb_new_pick_target_type_1 = {
+				condition = is_star_class_sc_o
+
+			}
+		}
+		hidden_effect = {
+			set_country_flag = ndb_target_is_star_class_sc_o
 			country_event = { id = giga_ndb.005 }
 		}
 	}
@@ -1126,6 +1142,13 @@ country_event = {
 
 			ndb_new_option_internal_if = {
 				condition = is_star_class_sc_o
+			}
+		}
+		ndb_target_is_star_class_sc_giga_o_star = {
+
+
+			ndb_new_option_internal_if = {
+				condition = is_star_class_sc_giga_o_star
 			}
 		}
 		ndb_target_is_star_class_sc_p_purple = {
