@@ -14684,7 +14684,10 @@ country_event = {
 		name = "ehof_sm_blackhole"
 		custom_gui = "ehof_mainui_option_small"
 		trigger = {
-			has_ascension_perk = ap_vast_expanses
+			OR = {
+				has_ascension_perk = ap_vast_expanses
+				has_ascension_perk = ap_supermassive_ehof
+			}
 			NOT = {
 				any_system = {
 					or = {
