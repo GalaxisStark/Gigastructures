@@ -483,6 +483,7 @@ d_alderson_repaired_district = {
 	is_for_colonizable = yes
 	potential = { always = no }
 	drop_weight = { weight = 0 }
+	icon = "d_city"
 	planet_modifier = {
 		planet_housing_mult = 0.15
 		planet_max_districts_mult = 0.05
@@ -517,6 +518,7 @@ d_alderson_repaired_housing = {
 	is_for_colonizable = yes
 	potential = { always = no }
 	drop_weight = { weight = 0 }
+	icon = "d_building_complex"
 	planet_modifier = {
 		pop_growth_speed = 0.15
 	}
@@ -549,6 +551,7 @@ d_alderson_repaired_miner = {
 	is_for_colonizable = yes
 	potential = { always = no }
 	drop_weight = { weight = 0 }
+	icon = "d_veiny_cliffs"
 	planet_modifier = {
 		planet_jobs_minerals_produces_mult = 0.15
 		planet_jobs_minerals_upkeep_mult = -0.15
@@ -582,6 +585,7 @@ d_alderson_repaired_farmer = {
 	is_for_colonizable = yes
 	potential = { always = no }
 	drop_weight = { weight = 0 }
+	icon = "d_bountiful_plains"
 	planet_modifier = {
 		planet_jobs_food_produces_mult = 0.2
 	}
@@ -616,6 +620,7 @@ d_alderson_repaired_technician_hive = {
 	is_for_colonizable = yes
 	potential = { always = no }
 	drop_weight = { weight = 0 }
+	icon = "d_station_reactor"
 	planet_modifier = {
 		planet_districts_energy_upkeep_mult = -0.2
 		planet_buildings_energy_upkeep_mult = -0.1
@@ -649,6 +654,7 @@ d_alderson_repaired_clerk = {
 	is_for_colonizable = yes
 	potential = { always = no }
 	drop_weight = { weight = 0 }
+	icon = "d_station_cargo"
 	planet_modifier = {
 		trade_value_mult = 0.15
 		planet_amenities_mult = 0.1
@@ -682,6 +688,7 @@ d_alderson_repaired_foundry = {
 	is_for_colonizable = yes
 	potential = { always = no }
 	drop_weight = { weight = 0 }
+	icon = "d_central_spire"
 	planet_modifier = {
 		planet_jobs_alloys_produces_mult = 0.15
 	}
@@ -714,6 +721,7 @@ d_alderson_repaired_police = {
 	is_for_colonizable = yes
 	potential = { always = no }
 	drop_weight = { weight = 0 }
+	icon = "d_reactor"
 	planet_modifier = {
 		planet_crime_mult = -0.25
 		job_enforcer_per_pop = 0.1
