@@ -11068,6 +11068,18 @@
 
   giga_wary_manage_tooltip:0 "§HManage Katzen Wariness§!\nAlthough Wariness naturally decays, some well-placed bribes can help speed up the process."
 
+  MESSAGE_GIGA_KATZEN_RESISTANCE_TITLE: "Flusionian Resistance Action Available"
+  giga_katzen_resistance_funds_text: "Funds can now be sent to the Roqualians."
+  giga_katzen_resistance_influence_text: "Our influence can now be exerted within the Imperium."
+  giga_katzen_resistance_raid_text: "Katzen warehouses can now be raded."
+  giga_katzen_resistance_weapons_text: "Weaponry can now be sent to the Roqualians."
+  giga_katzen_wariness_bribe_text: "Katzen officials can now be bribed."
+  giga_katzen_wariness_influence_text: "The Kaiser can now be reassured."
+  giga_katzen_wariness_resource_text: "Resistance Resources can now be turned in."
+
+  MESSAGE_GIGA_KATZEN_SHIPS_TITLE: "Katzen Ships Available"
+  giga_katzen_ships_message_text: "Ships can now be purchased from the Katzenartig Imperium."
+
   #intact
   kaiser_moon_barrel_tooltip:0 "§YRiesigekatzenwaffe§!\n\n§GFunctional | No damage penalties§!\n\nSabotage Requirements:\n§HSignificant Partisan Activity in Mercurreich§!\n§HSignificant Partisan Activity in Geschwollen§!\n\n§LThe Kaiser Moon's main weapon is a titanic railgun. Based on old Katzen designs for planetary weaponry, it accelerates an extremely dense projectile close to the speed of light. The projectile packs the energy of several billion nuclear warheads concentrated within a single point, rendering it incredibly deadly.§!"
 
@@ -13899,6 +13911,9 @@
   PERDITION_BEAM_ARTILLERY:0 "$PERDITION_BEAM_TITAN$"
   PERDITION_BEAM_ARTILLERY_DESC:0 "$PERDITION_BEAM_TITAN_DESC$"
 
+  ARCHAEO_ARTILLERY:0 "$ARCHAEO_TITAN$"
+  ARCHAEO_ARTILLERY_DESC:0 "$ARCHAEO_DESC$"
+
   ###BLOKKAT UPDATE###
   giga_mega.600.name:0 "Constructing Orbital Arcology"
   giga_mega.600.desc:0 "We can complete the Orbital Arcology around §Y[orbital_arcology_planet.GetName]§! provided we possess sufficient alloys. Given §Y[orbital_arcology_planet.GetName]§!'s size, the cost of the project is estimated to be §Y[ROOT.orbital_arcology_alloy_cost]§! £alloys£\n\nThe bonuses granted by the arcology will also scale based on the planet's size.\n\nIf completed, this arcology should grant §Y[orbital_arcology_planet.GetName]§! an extra §Y[orbital_arcology_planet.orbital_arcology_modifier]§! §HGenerator§! and §GFarming§! Districts if it can support them, as well as §Y[orbital_arcology_planet.orbital_arcology_modifier_districts]§! §BDistrict Slots§!.\n\nThe megastructure's build time is estimated at §Y900§! days and will have an upkeep of §Y15§! £energy£ and §Y5§! £alloys£ regardless of planet size."
@@ -16190,7 +16205,7 @@
   resolution_invite_fe_to_anti_aeternite_league_success:0 "We will send invitations to join the §YAnti-Aeternite League§! to every §YFallen Empire§! and §YAwakened Empire§! in the galaxy.\n\nDepending on their ethics and current situation, they might accept or refuse."
 
   giga_aeternum.8021.name:0 "The [global_event_country.GetGalCommunityOrGalImperium] Invites Precursors to AAA"
-  giga_aeternum.8021.desc:0 "The Galactic Senate has today agreed to draft up invitations intended for all §YFallen Empire§! and §YAwakaned Empires§! within our galaxy.\n\nThese invitations, written by the [global_event_country.GetGalCommunityOrGalImperium]'s most elite diplomats, shall contain extensive information regarding the sheer size and scope of the threat posed by §YAeternum§! in order to try and convince the galaxy's Precursors to temporarily cooperate with us and join the §YAnti-Aeternite Alliance§!.\n\nThe actual odds of them actually accepting is unknown, but the Senate is confident that a thorough explanation of just how dangerous Aeternum is, backed by comprehensive data and complemented by a healthy dose of respect towards the precursors, might just suffice to sway them to our side."
+  giga_aeternum.8021.desc:0 "The Galactic Senate has today agreed to draft up invitations intended for all §YFallen Empire§! and §YAwakened Empires§! within our galaxy.\n\nThese invitations, written by the [global_event_country.GetGalCommunityOrGalImperium]'s most elite diplomats, shall contain extensive information regarding the sheer size and scope of the threat posed by §YAeternum§! in order to try and convince the galaxy's Precursors to temporarily cooperate with us and join the §YAnti-Aeternite Alliance§!.\n\nThe actual odds of them actually accepting is unknown, but the Senate is confident that a thorough explanation of just how dangerous Aeternum is, backed by comprehensive data and complemented by a healthy dose of respect towards the precursors, might just suffice to sway them to our side."
   giga_aeternum.8021.a:0 "Let's see what happens now..."
   giga_aeternum.8021.a.tooltip:0 "§YInvitations§! to the §YAnti-Aeternite Alliance§! will be sent to §YFallen Empires§! and §YAwakened Empires§! over the next few months."
 
